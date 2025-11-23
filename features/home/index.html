@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id" data-preference="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Unduhan - Pilih Layanan</title>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/features/home/home.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Ganti Tema">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-system" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </button>
+        
+        <header class="main-header">
+            <h1 class="main-title">A-Code Downloader</h1>
+            <p class="subtitle">Pilih platform layanan untuk memulai</p>
+        </header>
+        <div class="platform-grid">
+            
+            <button id="btn-tiktok" class="platform-card">
+                <div class="card-icon-wrapper tiktok-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 0 .17.02.24.05.68.27 1.29.78 1.62 1.48.31.66.45 1.37.46 2.09.02 1.68.01 3.37.01 5.05 0 .17-.02.33-.05.49-.3.92-.93 1.6-1.78 1.95-.69.29-1.42.4-2.18.38-1.21-.04-2.42-.05-3.63-.05v6.4c0 .87-.56 1.63-1.38 1.87-.76.22-1.54.1-2.2-.33-.56-.37-.99-.9-1.2-1.52-.23-.68-.25-1.39-.25-2.11v-9.1c0-.2.02-.4.04-.6.28-1.08 1.08-1.9 2.16-2.18.66-.17 1.34-.21 2.02-.21z"/></svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">TikTok</span>
+                    <small class="card-desc">Unduh video & slideshow tanpa tanda air</small>
+                </div>
+            </button>
+            
+            <button id="btn-youtube" class="platform-card">
+                <div class="card-icon-wrapper youtube-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33.22 2.65.28 1.3.07 2.49.1 3.59.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+                    </svg>
+                </div>
+                <div class="card-text">
+                    <span class="card-title">YouTube</span>
+                    <small class="card-desc">Unduh video & audio (Segera Hadir)</small>
+                </div>
+            </button>
+            
+        </div>
+    </div>
+    
+    <script src="/static/js/main.js"></script>
+    <script src="/features/home/home.js"></script>
+</body>
+</html>
