@@ -1,0 +1,59 @@
+/* --- STYLE KHUSUS HALAMAN HOME --- */
+.platform-grid {
+    display: grid;
+    gap: 16px;
+}
+.platform-card {
+    display: flex; align-items: center; gap: 16px;
+    width: 100%; padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background-color: var(--card-color);
+    color: var(--text-primary);
+    cursor: pointer; text-align: left;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.platform-card:hover {
+    background-color: var(--primary-bg-hover);
+    border-color: var(--primary-bg-hover);
+}
+.card-icon-wrapper {
+    flex-shrink: 0; width: 40px; height: 40px;
+    border-radius: 50%; display: grid; place-items: center;
+    background-color: var(--primary-bg-hover);
+    /* Transisi untuk ikon */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.card-icon-wrapper svg { 
+    width: 20px; height: 20px;
+    /* Transisi untuk warna ikon */
+    transition: color 0.2s ease; 
+}
+.card-text { display: flex; flex-direction: column; }
+.card-title { 
+    font-size: 1.1em; font-weight: 500; 
+    color: var(--text-primary);
+    transition: color 0.2s ease;
+}
+.card-desc { font-size: 0.9em; color: var(--text-secondary); }
+
+/* Styling Khusus TikTok */
+.platform-card:hover .tiktok-icon {
+    background-color: var(--primary-color);
+    color: white;
+}
+.platform-card:hover .tiktok-icon + .card-text .card-title {
+    color: var(--primary-color);
+}
+
+/* Styling Khusus YouTube */
+.platform-card .youtube-icon svg {
+    color: #FF0000; /* Warna ikon YouTube merah */
+}
+.platform-card:hover .youtube-icon {
+    background-color: #FF0000;
+    color: white;
+}
+.platform-card:hover .youtube-icon + .card-text .card-title {
+    color: #FF0000;
+}
